@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(53, 52, 52);
+}
+.phone{
+    width: 300px;
+    height: 600px;
+    background-image: url("image/fond-ecran.jpeg");
+    background-size: cover;
+    border: #000 10px solid;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.status-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background: rgba(14, 13, 13, 0.3);
+    color: white;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.status-bar .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.status-bar .right .icons-main{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.status-bar .right i{
+    font-size: 16px;
+}
+.status-bar .right .icons-lock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.status-bar .right .icons-lock i{
+    font-size: 12px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: large;
+}
+.clock{
+    position: absolute;
+    top: 20%; 
+    right: 50%;
+    left: 70%; 
+    transform: translate(-45%, -45%);
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px; 
+    
+}
+
+.clock span{
+    display: inline-block;
+    font-weight: bolder;
+}
+#hours{
+    margin-right: 5px;
+}
+#minutes{
+    margin-left: 5px;
+}
+
+.colon {
+    margin: 0 5px;
+}
+
+
+.date-container{
+    display: flex;
+    gap: 2px;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin-top: 8px;
+}
+.date-container span{
+    text-transform: capitalize;
+}
+
+.date{
+    font-size: 18px;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.Month{
+    font-weight: bold;
+}
+.day{
+    font-weight: bold;
+}
+.Month, .day{
+    display: inline-block;
+    margin: 0 5px;
+    
+}
+.icons-lock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    left: 50%;
+    
+
+}
+.icons-lock i {
+    font-size: 12px;
+    color: white;
+    
+}
+.logo-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    transform: translateX(-50%);
+}
+.logo-icons i {
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-icons i:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 90%;
+    transform: translateX(-50%);
+}
+.photo i{
+   font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo i:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
