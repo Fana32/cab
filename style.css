@@ -13,7 +13,7 @@ body{
 .phone{
     width: 300px;
     height: 600px;
-    background-image: url("image/fond-ecran.jpeg");
+    background-image: url("fond-ecran.jpeg");
     background-size: cover;
     border: #000 10px solid;
     border-radius: 40px;
@@ -194,6 +194,7 @@ body{
     cursor: pointer;
 
 }
+
 
 
 
